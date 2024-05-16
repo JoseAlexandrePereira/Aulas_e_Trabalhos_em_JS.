@@ -1,0 +1,27 @@
+// Aula introdutória a JavaScript. Aula de tratamento de dados. Aprendendo a utilizar window.prompt e document.write, para receber, guardar e apresentar a informação na tela inicial, com letra maiúscula e minúscula. 
+// Foi utilizado também o terminal, aprendendo a formatar números,utilizando o método toFixed() para ter duas casas decimais. Utilizando toFixed().replace('.',',') para substituir o ponto, por vírgula. E por fim, toLocaleString('pt-BR', {Style: 'currency', currency: 'BRL'}) para calcular valores em reais e formatar o valor para a moeda desejada.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+var nome = window.prompt('Qual é seu nome ?')
+document.write(`Olá, <strong>${nome}</strong>! seu nome tem ${nome.length} letras.<br/>`)
+document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}<br/>`)
+    document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
