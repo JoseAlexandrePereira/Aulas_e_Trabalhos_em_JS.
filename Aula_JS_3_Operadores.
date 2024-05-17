@@ -1,0 +1,42 @@
+// Aula introdutória a JavaScript. Aprendendo sobre Operadores: Soma(+), subtração(-), multiplicação(*), divisão(/), resto da divisão(%) e pontencia(**).
+// Precedência: (), **, *, /, %, +, -.
+// Simplificação: +=, -=, *=, /=, **=, %=.
+// Operadores de incremento: ++, --.
+// Operadores Lógicos: Negação(!), Conjunção(&&), Disjunção (||).
+// Operadores Ternários: Teste (?) True (:) False. 
+
+// Testes: 
+   > var a = 5 + 3 = 8
+   > var b = a % 5 = 3
+   > var c = 5 * b ** 2 = 45
+   > var d = 10 - a / 2 = 6
+   > var e = 6 * 2 / d = 2
+   > var f = b % e + 4 / e = 3 
+
+// Testes: 
+
+> var a = 5
+> var b = 8
+
+> a > b && b % 2 == 0 
+> False
+
+
+// Testes: 
+> a <= b || b/2 == 2  
+> True
+
+
+// Testes: 
+
+> media >= 7.0 ? "Aprovado" : "Reprovado"
+> Aprovado
+
+
+// Testes:
+
+> var idade = 21
+
+> var r = idade >= 18 ? "MAIOR" : "MENOR"
+> r
+> 'MAIOR'
