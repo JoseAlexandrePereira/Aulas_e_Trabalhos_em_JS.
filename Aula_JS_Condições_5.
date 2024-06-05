@@ -138,3 +138,81 @@ if (pais == 'Brasil'){
 </body>
 
 </html>
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Condições Aninhadas: 
+
+// Criando um novo arquivo .js
+
+//Exercício ex011.js:
+
+var idade = 19
+
+if (idade < 16){
+    console.log("Não vota")
+}else if (idade < 18 || idade > 65) {
+    console.log('Voto opcional')
+} else {
+        console.log("Voto Obrigatório")
+    }
+
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Exercício ex012.js(Importando as horas do sistema):
+
+
+var agora = new Date()
+var horas = agora.getHours()
+console.log(`Agora são exatamente ${horas} horas.`)
+if(horas < 12){
+    console.log('BOM DIA!')
+} else if (horas <= 18) {
+console.log('BOA TARDE!')
+}else{
+    console.log('BOA NOITE!')
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Condições Múltiplas(Utilizando switch): 
+
+var agora = new Date()
+var diaSem = agora.getDay()
+/*
+0 = Domingo
+1 = Segunda
+2 = Terça
+3 = Quarta
+4 = Quinta
+5 = Sexta
+6 = Sábado
+*/
+console.log(diaSem)
+switch(diaSem){
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        concole.log('Segunda')
+        break
+    case 2:
+        console.log('Terça')
+        break
+    case 3:
+        console.log('Quarta')
+        break
+    case 4: 
+        console.log('Quinta') 
+        break
+    case 5: 
+        console.log('Sexta') 
+        break 
+    case 6: 
+        console.log('Sábado') 
+        break     
+    default:
+        console.log('[ERRO] Dia inválido')
+        break
+    }
+
+
+
