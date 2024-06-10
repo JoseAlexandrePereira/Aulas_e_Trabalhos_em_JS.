@@ -1,0 +1,56 @@
+// Aula introdutória a JavaScript. Utilizando variáveis compostas(Capazes de guardar vários valores em uma mesma estrutura). 
+// utilizamos variavel.push(x) método interno que irá acrecentar um valor ao último array.
+// para sabermos o comprimento de um array utilizamos variavel.length
+// A funcionalidade variavel.indexOf(7) irá buscar um valor na posição 7. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// exercício_1(Ambiente):
+
+let num = [8,7,3,4,2,5,6,1,9]
+num.sort()
+num.push(1)
+
+console.log(num)
+console.log(`O vetor tem ${num.length} posições`)
+console.log(`O primeiro valor do vetor é ${num[0]}`)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// exercício_2:
+
+let valores = [8,1,7,4,2,9]
+
+for(let pos=0; pos< valores.length; pos++){
+
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// exercicio_3(Ambiente):
+
+let num = [8,7,3,4,2,5,6,1,9]
+num.sort()
+num.push(1)
+
+console.log(num)
+console.log(`O vetor tem ${num.length} posições`)
+console.log(`O primeiro valor do vetor é ${num[0]}`)
+let pos = num.indexOf(4)
+
+if(pos == -1){
+
+console.log(`O valor não foi encontrado.`)
+
+}else{
+
+console.log(`O valor está na posição ${pos}`)
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
