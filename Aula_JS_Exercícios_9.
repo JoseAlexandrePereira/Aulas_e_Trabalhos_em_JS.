@@ -1,0 +1,93 @@
+/* Ex01.js - The formula to calculate the area of a circumference is defined as A = π . R2. Considering to this problem that π = 3.14159:
+
+Calculate the area using the formula given in the problem description:
+*/
+
+let r = 150.00
+let pi=3.14159
+
+area= pi*(r**2)
+
+console.log(`The area of ​​the circle is ${area}.`)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* Ex01.js - The formula to calculate the area of a circumference is defined as A = π . R2. Considering to this problem that π = 3.14159:
+
+Calculate the area using the formula given in the problem description:
+*/
+
+// Exercício feito utilizando HTML,CSS e JavaScript.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate the area of ​​the circle.</title>
+
+
+<style>
+
+div#area {
+        font: normal 20 pt Arial;
+        background: rgb(43, 85, 43);
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        
+    }
+    
+    body {
+
+font: normal 18pt Arial;
+
+}
+input{
+font: normal 20pt Arial;
+width: 100px;
+color: rgb(0, 0, 0);
+}
+div#res {
+margin-top: 30px;
+}
+    
+
+</style>
+
+</head>
+<body>
+
+    <div id = "area">
+        <h1>Calculate the area of ​​the circle.</h1>
+        <h4>Enter the radius of the circle:</h4>
+    <input type="number" name="radius" id="radius"> 
+    <input type="button" id="calculateButton" value="Result" onclick="Calculate()">
+    
+
+    <div id = "res"></div>
+
+
+<script>
+
+    function Calculate() {
+    
+        let pi = 3.14159
+        var tn1 = window.document.getElementById('radius')
+        var res= window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var area = pi*(n1**2)
+            
+            res.innerHTML = `The area of the circle is <strong>${area}</strong>`
+    }
+
+</script>
+</div>
+
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
