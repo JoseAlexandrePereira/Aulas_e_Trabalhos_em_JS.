@@ -1,0 +1,117 @@
+/* Exercício realizado em aula utilizando HTML 5,CSS e JavaScript*/
+
+/*Meu programa altera a cor do body, mostra uma imagem condizente ao horário do dia, ou seja, no período da manhã ele irá apresentar uma imagem do dia começando e um plano de fundo claro. No período da tarde ele apresenta uma imagem do entardecer e o fundo do site com cor quente. A noite, é apresentado uma imagem de um céu noturno, com o fundo escuro. 
+Juntamente a essesdados é apresentado o horário, o número inteiro de horas.*/
+
+
+// HTML5:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="carregar()">
+
+    <header>
+
+<h1>Hora do dia</h1>
+
+    </header>
+
+    <section>
+
+    <div id="msg">
+    Aqui vai aparecer a mensagem...
+    </div>
+    <div id="foto">
+        <img id="imagem" src="manhã.png" alt="foto do dia">
+</div>
+
+    </section>
+
+    <footer>
+<p>&copy;ZéAraguaia</p>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// CSS:
+
+body{
+background: rgb(48, 48, 212);
+font: normal 15pt Arial;
+
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(19, 18, 18);
+    
+}
+
+div{
+text-align: center;
+padding: 9px;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//JavaScript:
+
+function carregar(){
+    var msg = window.document.getElementById('msg')
+    var img = window.document.getElementById('imagem')
+    var data = new Date()
+    var hora = data.getHours()
+    msg.innerHTML = `Agora são ${hora} horas.`
+
+    if (hora >= 0 && hora < 12) {
+        //BOM DIA!
+        img.src = 'manhã.png'
+    document.body.style.background = '#99a4a6'
+
+    }else if (hora >= 12 && hora <= 18){
+        //BOA TARDE!
+        img.src= 'tarde.png'
+document.body.style.background = '#fe9700'
+
+    }else{
+        //BOA NOITE!
+        img.src = 'noite.png'
+        document.body.style.background = '#15262e'
+
+
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
