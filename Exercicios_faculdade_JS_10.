@@ -13,7 +13,7 @@ function maximo(a = 6.1, b = 5.2){
     }
 
 }
-console.log(maximo())
+console.log(maximo()) 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*2. Desenvolva um programa que leia um valor inteiro N. O programa deve chamar a função categoria() passando
@@ -29,7 +29,7 @@ function categoria(n = 101){
     if(n<=10){
 return 'F1'
 
-    }if(n>10, n<= 100){
+    }else if(n>10, n<= 100){
 return 'F2'
 
     }else{
@@ -57,10 +57,10 @@ console.log(`Prova 1: ${nota1}, Prova 2: ${nota2}, Prova 3: ${nota3}`)
 if(nota1> 10){
 return 'Valor de nota inválido'
 
-}if(nota2 > 10){
+}else if(nota2 > 10){
     return 'Valor de nota inválido'
     
-    }if(nota3 > 10){
+    }else if(nota3 > 10){
         return 'Valor de nota inválido'
         
         }
@@ -72,7 +72,7 @@ console.log(`A média do aluno é: ${media}`)
 if(media <= 5){
 return 'Aluno reprovado'
 
-}if (media <= 7){
+}else if (media <= 7){
 return 'Aluno de recuperação'
 
 }else {
